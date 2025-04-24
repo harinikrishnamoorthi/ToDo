@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Done - Keep it up!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-container">
+            <div class="header">
+                <div class="header-left">
+                    <h1 class="title">Todo Done</h1>
+                    <p class="subtitle">Keep it up!</p>
+                </div>
+                <div class="progress">
+                    <div class="circle"><span id="completed-count">0</span>/<span id="total-count">0</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="taskInput" class="task-input" placeholder="Write your task">
+                <button class="add-button" id="addTask">+</button>
+            </div>
+
+            <div class="task-list" id="taskList">
+                <!-- Tasks will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
